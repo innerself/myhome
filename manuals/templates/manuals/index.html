@@ -1,0 +1,17 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="main-menu">
+  <h1>Инструкции</h1>
+  <a href="{% url 'manuals:home-index' %}"><h2>Дом</h2></a>
+  <a href="{% url 'manuals:dacha-index' %}"><h2>Дача</h2></a>
+</div>
+</body>
+</html>

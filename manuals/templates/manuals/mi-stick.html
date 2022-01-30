@@ -1,0 +1,29 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="topic-page">
+  <h1>Инструкции для Mi Stick</h1>
+  <h2>Перезагрузка устройства</h2>
+  <div class="manual-body">
+    <p>1. Нажать на пульте кнопку "Домой":</p>
+    <img src="{% static 'manuals/images/mi-stick-remote-home.png' %}">
+    <p>2. В появившемся главном меню зайти в пункт "Настройки":</p>
+    <img src="{% static 'manuals/images/mi-main-menu-settings.png' %}">
+    <p>3. Далее в "Настройки устройства":</p>
+    <img src="{% static 'manuals/images/mi-main-menu-settings-device.png' %}">
+    <p>4. Далее в "Об устройстве":</p>
+    <img src="{% static 'manuals/images/mi-main-menu-settings-device-about.png' %}">
+    <p>5. Далее в "Перезагрузить":</p>
+    <img src="{% static 'manuals/images/mi-main-menu-settings-device-about-reboot.png' %}">
+    <p>6. Далее "Перезагрузить":</p>
+    <img src="{% static 'manuals/images/mi-main-menu-settings-device-about-reboot-confirm.png' %}">
+  </div>
+</div>
+</body>
+</html>
