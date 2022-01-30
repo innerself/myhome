@@ -22,4 +22,7 @@ def dacha(request):
 
 
 def dacha_topic(request, topic: str):
-    return render(request, 'manuals/generator.html')
+    if topic == 'generator':
+        return render(request, f'manuals/generator.html')
+    else:
+        return HttpResponseNotFound('<h1>Пока такой инструкции нет<h1>')

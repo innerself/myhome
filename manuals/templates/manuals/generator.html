@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+  <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
+</head>
+<body>
+<div class="topic-page">
+  <h1>Инструкции для генератора</h1>
+  <h2>Запуск</h2>
+  <div class="manual-body">
+    <p>1. Включить:</p>
+    <img src="{% static 'manuals/images/generator-turnon.png' %}" alt="">
+    <p>2. Открыть подачу топлива:</p>
+    <img src="{% static 'manuals/images/generator-open-fuel.png' %}" alt="">
+    <p>3. Открыть подачу воздуха:</p>
+    <img src="{% static 'manuals/images/generator-open-air.png' %}" alt="">
+    <p>4. Запустить:</p>
+    <img src="{% static 'manuals/images/generator-kickstart.png' %}" alt="">
+    <p>5. Подключить провод к выходу:</p>
+    <img src="{% static 'manuals/images/generator-poweroutput.png' %}" alt="">
+  </div>
+</div>
+</body>
+</html>

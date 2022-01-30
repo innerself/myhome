@@ -1,10 +1,16 @@
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <title>Title</title>
+  <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
 </head>
 <body>
-Dacha menu
+<div class="main-menu">
+  <h1>Инструкции - дача</h1>
+  <a href="{% url 'manuals:dacha-topic' topic='generator' %}"><h2>Генератор</h2></a>
+</div>
+
 </body>
 </html>
