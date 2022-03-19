@@ -9,7 +9,10 @@
 </head>
 <body>
 <div class="main-menu">
-  <h1>Инструкции</h1>
+  <h1>
+    <a href="{% url 'manuals:index' %}">Инструкции</a>
+  </h1>
+  <hr>
   <a href="{% url 'manuals:home-index' %}"><h2>Дом</h2></a>
   <a href="{% url 'manuals:dacha-index' %}"><h2>Дача</h2></a>
 </div>

@@ -6,11 +6,44 @@
   <title>Title</title>
   <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
 </head>
-<body>
-<div class="main-menu">
-  <h1>Инструкции - дача</h1>
-  <a href="{% url 'manuals:dacha-topic' topic='generator' %}"><h2>Генератор</h2></a>
-</div>
 
+<body id="body">
+<div class="main-menu">
+  <div class="navigation">
+    <h1>
+      <a href="{% url 'manuals:index' %}">Инструкции</a>
+      >
+      <a href="{% url 'manuals:dacha-index' %}">Дача</a>
+    </h1>
+  </div>
+  <hr>
+  <ul class="menu-items">
+    <li>
+      <h2><a href="#generator-start">Генератор :: Запуск</a></h2>
+    </li>
+  </ul>
+  <hr>
+  <div id="generator-start" class="manual-item">
+    <div class="manual-item-header">
+      <h2>Генератор > Запуск</h2>
+      <h3><a href="#body">[Наверх]</a></h3>
+    </div>
+    <div class="manual-item-body">
+      <p>1. Включить:</p>
+      <img src="{% static 'manuals/images/generator-turnon.png' %}" alt="">
+      <p>2. Открыть подачу топлива:</p>
+      <img src="{% static 'manuals/images/generator-open-fuel.png' %}" alt="">
+      <p>3. Открыть подачу воздуха:</p>
+      <img src="{% static 'manuals/images/generator-open-air.png' %}" alt="">
+      <p>4. Запустить:</p>
+      <img src="{% static 'manuals/images/generator-kickstart.png' %}" alt="">
+      <p>5. Подключить провод к выходу:</p>
+      <img src="{% static 'manuals/images/generator-poweroutput.png' %}" alt="">
+    </div>
+    <div class="manual-item-footer">
+      <h3><a href="#body">[Наверх]</a></h3>
+    </div>
+  </div>
+</div>
 </body>
 </html>

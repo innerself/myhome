@@ -6,11 +6,22 @@ body {
   text-align: center;
 }
 
-.manual-body {
-  font-size: x-large;
+.menu-items {
+  display: inline-block;
 }
 
-.manual-body > img {
-  max-width: 60vw;
-  max-height: 60vh;
+.manual-item-header {
+
+}
+
+.manual-item-body {
+  font-size: x-large;
+  justify-items: center;
+  width: 80%;
+  margin: auto;
+}
+
+.manual-item-body > img {
+  max-width: 50vw;
+  max-height: 50vh;
 }

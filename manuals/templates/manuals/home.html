@@ -6,10 +6,45 @@
   <title>Title</title>
   <link href="{% static 'manuals/css/style.css' %}" rel="stylesheet">
 </head>
-<body>
+<body id="body">
 <div class="main-menu">
-  <h1>Инструкции - дом</h1>
-  <a href="{% url 'manuals:home-topic' topic='mi-stick' %}"><h2>Mi Stick</h2></a>
+  <div class="navigation">
+    <h1>
+      <a href="{% url 'manuals:index' %}">Инструкции</a>
+      >
+      <a href="{% url 'manuals:home-index' %}">Дом</a>
+    </h1>
+  </div>
+  <hr>
+  <ul class="menu-items">
+    <li>
+      <h2><a href="#mi-stick-reboot">Mi Stick :: Перезагрузка устройства</a></h2>
+    </li>
+  </ul>
+  <hr>
+  <div id="mi-stick-reboot" class="manual-item">
+    <div class="manual-item-header">
+      <h2>Перезагрузка устройства</h2>
+      <h3><a href="#body">[Наверх]</a></h3>
+    </div>
+    <div class="manual-item-body">
+      <p>1. Нажать на пульте кнопку "Домой":</p>
+      <img src="{% static 'manuals/images/mi-stick-remote-home.png' %}" alt="">
+      <p>2. В появившемся главном меню зайти в пункт "Настройки":</p>
+      <img src="{% static 'manuals/images/mi-main-menu-settings.png' %}" alt="">
+      <p>3. Далее в "Настройки устройства":</p>
+      <img src="{% static 'manuals/images/mi-main-menu-settings-device.png' %}" alt="">
+      <p>4. Далее в "Об устройстве":</p>
+      <img src="{% static 'manuals/images/mi-main-menu-settings-device-about.png' %}" alt="">
+      <p>5. Далее в "Перезагрузить":</p>
+      <img src="{% static 'manuals/images/mi-main-menu-settings-device-about-reboot.png' %}" alt="">
+      <p>6. Далее "Перезагрузить":</p>
+      <img src="{% static 'manuals/images/mi-main-menu-settings-device-about-reboot-confirm.png' %}" alt="">
+    </div>
+    <div class="manual-item-footer">
+      <h3><a href="#body">[Наверх]</a></h3>
+    </div>
+  </div>
 </div>
 </body>
 </html>
