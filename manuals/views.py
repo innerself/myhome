@@ -11,3 +11,7 @@ def home(request):
 
 def dacha(request):
     return render(request, 'manuals/dacha.html')
+
+
+def pc(request):
+    return render(request, 'manuals/pc.html')
